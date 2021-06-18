@@ -1,15 +1,7 @@
 <template>
   <div id="app">
-    <van-tabbar v-model="active">
-      <van-tabbar-item icon="home-o" to="/home">外卖</van-tabbar-item>
-      <van-tabbar-item icon="search" to="/ss">搜索</van-tabbar-item>
-      <van-tabbar-item icon="friends-o" to="/dd">订单</van-tabbar-item>
-      <van-tabbar-item icon="contact" to="/my">我的</van-tabbar-item>
-   </van-tabbar>
-       
       <router-view></router-view>
     </div>
-    
 </template>
 
 <script>
@@ -22,11 +14,12 @@ export default {
         GridItem,
         Swipe, 
         SwipeItem,
-        Toast
+        Toast,
     },
   data() {
        return {
          active: 0,
+         value:""
     };
   },
   methods: {
